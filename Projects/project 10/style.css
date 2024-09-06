@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+p{
+    text-align: left;
+    margin: 40px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+h3{
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    text-shadow: 5px 6px 6px red ,2px 2px 2px yellow;
+    user-select: none;
+}
+h6{
+    color: white;
+    text-align: right;
+    font-size: 20px;
+    margin: 19px;
+    font-weight: 600;
+}
+a{
+    position: absolute;
+    top: 89%;
+    right: 35%;
+    z-index: 1;
+    text-decoration: underline;
+    font-weight: 600;
+    
+}
+div{
+    background-image: url(bg.jpg);
+    background-size: 500px 620px;
+    background-repeat: no-repeat;
+    /* border: 2px solid black; */
+    align-items: center;
+    height: 600px;
+    width: 500px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+h1{
+    font-size: 200px;
+    color: white;
+}
+ul{
+    position: absolute;
+    bottom: 50%;
+    left: 45%;
+  
+    transform: translateX(-50%);
+}
+ul li{
+    position: absolute;
+    /* display: block; */
+    list-style: none;
+    background: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    filter: blur(5px);
+    
+}
+ul li:nth-child(odd){
+    animation: animationodd 6s linear infinite;
+}
+@keyframes animationodd{
+    0%{
+        transform: translate(30px) scale(13);
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(30px) scale(13);
+        opacity: 0;
+    }
+}
+ul li:nth-child(even){
+    animation: animationeven 6s linear infinite;
+}
+@keyframes animationeven{
+    0%{
+        transform: translate(30px, 60px) scale(1);
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-30px,-60px) scale(18);
+        opacity: 0;
+    }
+}
+ul li:nth-child(1){
+    animation-delay: 0s;
+    background-color: red;
+}
+ul li:nth-child(2){
+    animation-delay: 2s;
+    background-color: green;
+}
+ul li:nth-child(3){
+    animation-delay: 4s;
+    background-color: yellow;
+}
+ul li:nth-child(4){
+    animation-delay: 6s;
+    background-color: purple;
+}
+ul li:nth-child(5){
+    animation-delay: 8s;
+    background-color: greenyellow;
+}
+ul li:nth-child(6){
+    animation-delay: 10s;
+    background-color: orange;
+}

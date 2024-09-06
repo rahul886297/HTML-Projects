@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    background-image: url(bg1.webp);
+    background-repeat: no-repeat;
+    background-size: 1536px 800px;
+}
+  ul{
+    display: flex;
+    margin: 20px 700px;
+    text-decoration: none;
+}
+li{
+     margin-right: 50px;
+     list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 5px 4px black;
+}
+.contact{
+    position: absolute;
+    top: 0;
+    background-color: rgb(11, 10, 10);
+    height: 100vh;
+    width: 400px;
+    opacity: 0.8;
+}
+.contact h1{
+   text-align: center;
+   margin-top: 90px;
+   font-size: 40px;
+   color: white;
+   font-weight: 600;
+}
+.contact p{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 80px;
+    color: white;
+   
+    
+}
+.contact h4{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 80px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.contact button{
+    margin: 70px 150px;
+    padding: 5px 6px;
+    background-color: rgb(255, 170, 0);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
